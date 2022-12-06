@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -10,6 +11,16 @@ export default function Home() {
       </Head>
   
       {/* <Navbar/> */}
+
+      <nav>
+        <ul className='flex justify-center space-x-9'>
+          <Link href={"/"}><li>Home</li></Link> 
+          <Link href={"/blog"}><li>blog</li></Link>
+          <Link href={"/about"}><li>About</li></Link>
+          <Link href={"/contact"}><li>Contact</li></Link>
+        </ul>
+      </nav>
+
       <div className='text-center mt-52 space-y-4 '>
         <h1 className='text-6xl font-semibold font-sans'>Hunting_Coder</h1>
         <p className='text-xl'>A Hunting_Coder by a Hunting_Coder</p>
