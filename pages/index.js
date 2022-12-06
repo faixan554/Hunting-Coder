@@ -9,9 +9,33 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
   
-      <nav>
-          
-      </nav>
+      {/* <Navbar/> */}
+      <div className='text-center mt-52 space-y-4 '>
+        <h1 className='text-6xl font-semibold font-sans'>Hunting_Coder</h1>
+        <p className='text-xl'>A Hunting_Coder by a Hunting_Coder</p>
+      </div>      
+
+      <div className='text-center pt-10 space-y-5 text-lg'>
+        <div>
+          <h1 className='text-2xl'>How to learn Javascript</h1>
+          <p className='text-base'>learn Javascript in one video is the best way to learn Javascript</p>
+        </div>
+        <div>
+          <h1 className='text-2xl'>How to learn Javascript</h1>
+          <p className='text-base'>learn Javascript in one video is the best way to learn Javascript</p>
+        </div>
+        <div>
+          <h1 className='text-2xl'>How to learn Javascript</h1>
+          <p className='text-base'>learn Javascript in one video is the best way to learn Javascript</p>
+        </div>
+        <div>
+          <h1 className='text-2xl'>How to learn Javascript</h1>
+          <p className='text-base'>learn Javascript in one video is the best way to learn Javascript</p>
+        </div>
+        
+      
+      </div>
+      {/* <Footer/> */}
       
     </div>
   )
