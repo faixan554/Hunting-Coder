@@ -5,7 +5,7 @@ function slug() {
     const router = useRouter();
     const {slug} = router.query;
   return (
-    <div>{slug}</div>
+    <div className='text-center text-4xl pt-10 text-blue-600 font-bold'>{slug}</div>
   )
 }
 
