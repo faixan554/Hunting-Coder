@@ -3,7 +3,8 @@ import Link from 'next/link'
 
 function Blog() {
   return (
-    <div className='text-center pt-20 space-y-5 text-lg pb-20'>
+    <div className='text-center pt-16 space-y-5 text-lg pb-20'>
+      <h1 className='text-6xl'>Latest Blogs</h1>
         <div>
           <Link href={'/blogpost/learn-javascript'}>
               <h1 className='text-2xl cursor-pointer'>How to learn Javascript</h1>
