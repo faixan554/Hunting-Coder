@@ -1,7 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Link from 'next/link'
 
+// fetch data using useEffect
 function Blog() {
+  useEffect(() => {
+    fetch('http://localhost:3000/api/blogs').then((a) => a.json())
+     .then((data) => {
+        console.log(data)
+      })
+    })
+
+
+
+
+
+
   return (
     <div className='text-center pt-16 space-y-5 text-lg pb-20'>
       <h1 className='text-6xl'>Latest Blogs</h1>
