@@ -1,15 +1,27 @@
-import React, { useEffect } from 'react'
+import React, { useEffect , useState } from 'react'
 import Link from 'next/link'
 
 // fetch data using useEffect
 function Blog() {
-  useEffect(() => {
+
+
+  const [blogdata, setBlogdata] = useState([])
+   useEffect(() => {
     fetch('http://localhost:3000/api/blogs').then((a) => a.json())
      .then((data) => {
         console.log(data)
+        setBlogdata(data);
       })
-    })
+    },[])
 
+
+
+
+
+
+
+
+ 
 
 
 
