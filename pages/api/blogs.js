@@ -12,4 +12,5 @@ export default async function handler(req, res) {
         alldata.push(JSON.parse(myfile));
     }   
     res.status(200).json(alldata); 
+    console.log(alldata);
   }
