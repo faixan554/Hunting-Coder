@@ -10,7 +10,7 @@ export default function Home() {
       </Head>
 
       <div className='text-center mt-24 space-y-4 '>
-        <h1 className='text-6xl font-semibold font-sans'>Hunting_Coder</h1>
+        <h1 className='text-6xl font-bold text-blue-800'>Hunting_Coder</h1>
         <p className='text-xl'>A Hunting_Coder by a Hunting_Coder</p>
       </div>      
 
