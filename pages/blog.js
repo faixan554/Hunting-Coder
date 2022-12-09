@@ -12,6 +12,9 @@ function Blog() {
         console.log(data);
       })
     },[])
+
+
+
     
 
   return (
@@ -27,10 +30,7 @@ function Blog() {
           <h1 className='text-2xl'>How to learn Javascript</h1>
           <p className='text-base'>learn Javascript in one video is the best way to learn Javascript</p>
         </div>
-        <div>
-          <h1 className='text-2xl'>How to learn Javascript</h1>
-          <p className='text-base'>learn Javascript in one video is the best way to learn Javascript</p>
-        </div>
+        
 
         
       
