@@ -10,7 +10,7 @@ function Blog() {
      .then((data) => {
         setBlogdata(data);
       })
-    })
+    },[])
 
   return (
     <div className='text-center pt-16 space-y-5 text-lg pb-20'>
