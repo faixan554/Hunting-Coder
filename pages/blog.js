@@ -2,15 +2,9 @@ import React, { useEffect , useState } from 'react'
 import Link from 'next/link'
 
 // fetch data using useEffect
-function Blog() {
+function Blog(props) {
 
-  const [blogdata, setBlogdata] = useState([])
-   useEffect(() => {
-    fetch('http://localhost:3000/api/blogs').then((a) => a.json())
-     .then((data) => {
-        setBlogdata(data);
-      })
-    },[])
+  const [blogdata, setBlogdata] = useState(props.allblogs)
 
   return (
     <div className='text-center pt-16 space-y-5 text-lg pb-20'>
@@ -29,5 +23,19 @@ function Blog() {
 
   )
 }
+
+
+
+// Server side rendering
+export async function getServerSideProps() {
+  // Fetch data from external API
+  const res = await fetch(`http://localhost:3000/api/blogs`)
+  const allblogs = await res.json()
+
+  // Pass data to the page via props
+  return { props: { allblogs } }
+}
+
+
 
 export default Blog
