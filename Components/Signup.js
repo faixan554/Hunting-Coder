@@ -28,6 +28,11 @@ function Signup() {
       .then((response) => response.json())
       .then((data) => {
         alert('Thanks for submitted your creditionals! Please Login!');
+        setFirstname('')
+        setLastname('')
+        setEmail('')
+        setPassword('')
+        setConfirmpassword('')
 
       })
       .catch((error) => {

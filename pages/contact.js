@@ -1,7 +1,7 @@
 import React from 'react'
 import Contact from '../Components/Contact'
 
-function contact() {
+function Contact() {
   return (
     <>
     <Contact/>
@@ -9,4 +9,4 @@ function contact() {
   )
 }
 
-export default contact
+export default Contact
