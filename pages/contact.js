@@ -1,12 +1,12 @@
 import React from 'react'
-import Form from '../Components/Form'
+import Contact from '../Components/Contact'
 
-function Contact() {
+function contact() {
   return (
     <>
-    <Form/>
+    <Contact/>
     </>
   )
 }
 
-export default Contact
+export default contact

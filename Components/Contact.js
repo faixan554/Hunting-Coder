@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Form() {
+function Contact() {
   return (
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
@@ -29,7 +29,7 @@ function Form() {
                 </div>
               </div>
               <div className="p-2 w-full">
-                <button className="flex mx-auto items-center bg-blue-700 text-white rounded-xl font-semibold border-0 py-3 px-10 focus:outline-none hover:bg-blue-800 text-lg mt-4 md:mt-0">Button</button>
+                <button className="flex mx-auto items-center bg-blue-700 text-white rounded-xl font-semibold border-0 py-3 px-10 focus:outline-none hover:bg-blue-800 text-lg mt-4 md:mt-0">Submit</button>
               </div>
               <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
                 <a className="text-indigo-500">example@email.com</a>
@@ -67,4 +67,4 @@ function Form() {
   )
 }
 
-export default Form
+export default Contact

@@ -12,12 +12,12 @@ function Navbar() {
             <span className="ml-3 text-2xl font-bold text-blue-800">Hunting_Coder</span>
             </a>
             <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-xl justify-center list-none space-x-8">
-            <Link href={"/"}><li>Home</li></Link> 
-            <Link href={"/blog"}><li>blog</li></Link>
-            <Link href={"/about"}><li>About</li></Link>
-            <Link href={"/contact"}><li>Contact</li></Link>
+              <Link href={"/"}><li>Home</li></Link> 
+              <Link href={"/blog"}><li>blog</li></Link>
+              <Link href={"/about"}><li>About</li></Link>
+              <Link href={"/contact"}><li>Contact</li></Link>
             </nav>
-            <button className="inline-flex items-center bg-blue-700 text-white rounded-xl font-semibold border-0 py-2 px-5 focus:outline-none hover:bg-blue-800 text-base mt-4 md:mt-0">Sign Up</button>
+            <button className="inline-flex items-center bg-blue-700 text-white rounded-xl font-semibold border-0 py-2 px-7 focus:outline-none hover:bg-blue-800 text-base mt-4 md:mt-0"><Link href={"/login"}>Log in</Link></button>
         </div>
     </header>
   )
