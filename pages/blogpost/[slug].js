@@ -18,10 +18,6 @@ function slug(props) {
       <div>
         <h1 className='text-center text-4xl pt-10 text-blue-600 font-bold'>{blog && blog.title}</h1>
         { blog && <div className='container my-8 w-3/4 mx-auto text-justify' dangerouslySetInnerHTML={createMarkup(blog.content)}></div>}
-        
-
-
-        
       </div>
     </div>
   )

@@ -1,6 +1,11 @@
 import Head from 'next/head'
+import { useState } from 'react'
+import Link from 'next/link'
 
-export default function Home() {
+export default function Home(props) {
+
+  const [blogdata, setBlogdata] = useState(props.allblogs)
+
   return (
     <div className='pb-20'>
       <Head>
@@ -15,11 +20,26 @@ export default function Home() {
       </div>      
 
       <div className='text-center pt-10 space-y-5 text-lg'>
-        <div>
-          <h1 className='text-2xl'>How to learn Javascript</h1>
-          <p className='text-base'>learn Javascript in one video is the best way to learn Javascript</p>
-        </div>
+      {blogdata.map((blogitem)=>{
+          return <div key={blogitem.slug}>
+            <Link href={`/blogpost/${blogitem.slug}`}>
+                <h1 className='text-2xl text-blue-800 font-semibold p-3 cursor-pointer'>{blogitem.title}</h1>
+            </Link>
+            <p className='text-base text-justify text-gray-600 w-1/2 mx-auto'>{blogitem.metadesc.substr(0,170)}</p>
+          </div>
+        })}
       </div>
     </div>
   )
+}
+
+
+// Server side rendering
+export async function getServerSideProps() {
+  // Fetch data from external API
+  const res = await fetch(`http://localhost:3000/api/blogs`)
+  const allblogs = await res.json()
+
+  // Pass data to the page via props
+  return { props: { allblogs } }
 }

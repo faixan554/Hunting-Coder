@@ -1,4 +1,4 @@
-import React, { useEffect , useState } from 'react'
+import React , {useState} from 'react'
 import Link from 'next/link'
 
 // fetch data using useEffect
@@ -15,7 +15,7 @@ function Blog(props) {
             <Link href={`/blogpost/${blogitem.slug}`}>
                 <h1 className='text-2xl text-blue-800 font-semibold p-3 cursor-pointer'>{blogitem.title}</h1>
             </Link>
-            <p className='text-base text-justify text-gray-600 w-1/2 mx-auto'>{blogitem.content.substr(0,250)}</p>
+            <p className='text-base text-justify text-gray-600 w-1/2 mx-auto'>{blogitem.metadesc.substr(0,250)}</p>
           </div>
         })}
 
